@@ -94,6 +94,14 @@ plt.show()
 
 ```
 ### Problems in Apple Watch auto-sampling
+Apple Watch Official Sampling Standards：
+
+- HRV (SDNN) documentation: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn?utm_source=chatgpt.com
+- Heart Rate:
+https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartrate?utm_source=chatgpt.com
+- Respiratory Rate:
+https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/respiratoryrate?utm_source=chatgpt.com
+
 
 #### Inaccurate sampling dute to ADHD-related movement tendency
 ##### Probelms 1:lack of reliable baseline recording
@@ -106,8 +114,17 @@ Maintaing natural breathing(no intentional regulation)
 
 ##### Problems 2:
 HRV(SDNN based):recorded only during steady states, often once evert few hours
+
+<img width="1020" height="333" alt="ce25d9aad47f9c0f156f9fb5afd5cf86" src="https://github.com/user-attachments/assets/bd181fb2-3805-422e-9ec4-5855479160f0" />
+
 HR:irregular and context-dependent sampling frequency
+
+<img width="1029" height="333" alt="976b923456ecefabae0f2b83f61c6e65" src="https://github.com/user-attachments/assets/b5820378-1d69-486f-8600-c2f5f41b36b0" />
+
 Respiratory Rate:Recorded sporadically under resting conditions
+
+<img width="1020" height="333" alt="49bce72f716093728eb905d63873a22e" src="https://github.com/user-attachments/assets/2f481159-812e-4f64-8765-15d9afafb88d" />
+
 ###### Solutions 2:Manual Forced Recording via Zhengnian App
 When entering a relevent state:
     Manually open Zhengnian App
