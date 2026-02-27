@@ -136,4 +136,16 @@ Forced recording offer "Valuable states"labels.
 
 ### Additional Vairable:Wearing earpods
 
+## 2026-02-27 — Physio Data Exploration (Feb 16–19)-Sparse Data Analysis
+- Despite the lack and inconsistency of the data, the dataset has its adventage in detailed and full sujective records and pysiological state description. It will be more effective to apply the methond of Event-based analysis than Time Series Modeling.
+#### Why windows?
+- Fixed window and sliding window
+- Noise reduction: Physiological signals contain random fluctuation. When we aggregate multiple data points within a time window(compute the mean of median), random noise tends to cancel out, revealing the underlying signal.
+- Alignment: Create a common temporal reference frame.Different sensors record at different timestamps.
+- Comparability:Standardized structure anables statistical comparsion.
+
+#### Baseline Choosing
+
+
+
 
