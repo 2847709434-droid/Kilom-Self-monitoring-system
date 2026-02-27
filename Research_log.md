@@ -183,9 +183,8 @@ sns.lineplot(data=data, x='startDate', y='value', ax=axes[i], marker='o', marker
 
 Problem:Failed to record the data needed due to the restrictive data import settings in the collection process
 
-```
+<img width="1186" height="1990" alt="download" src="https://github.com/user-attachments/assets/59551607-cea6-415c-a679-11a341506b29" />
 
-<img width="1186" height="1990" alt="download" src="https://github.com/user-attachments/assets/b48a77db-1c2d-4441-acc7-bd3e434e0a6c" />
 
 
 
