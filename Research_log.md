@@ -175,6 +175,7 @@ record_labels=[
 
 #-----------------scatterplot->lineplot--------------------------
 sns.lineplot(data=data, x='startDate', y='value', ax=axes[i], marker='o', markersize=4, linewidth=1, alpha=0.8)
+```
 
 ## 2026-02-28 — Data checking (Feb 27)-Verify the "Mindful App" manual-trigger method
 
