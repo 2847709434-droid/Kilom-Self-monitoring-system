@@ -138,13 +138,59 @@ Forced recording offer "Valuable states"labels.
 
 ## 2026-02-27 — Physio Data Exploration (Feb 16–19)-Sparse Data Analysis
 - Despite the lack and inconsistency of the data, the dataset has its adventage in detailed and full sujective records and pysiological state description. It will be more effective to apply the methond of Event-based analysis than Time Series Modeling.
-#### Why windows?
+### Why windows?
 - Fixed window and sliding window
 - Noise reduction: Physiological signals contain random fluctuation. When we aggregate multiple data points within a time window(compute the mean of median), random noise tends to cancel out, revealing the underlying signal.
 - Alignment: Create a common temporal reference frame.Different sensors record at different timestamps.
 - Comparability:Standardized structure anables statistical comparsion.
 
-#### Baseline Choosing
+### Baseline Choosing
+- Subjective Recording: A physiologically stable condition without acute stress or strong activation.
+- Shape in the plot: A plateau phase exhibiting minimal variance and no discernible trend.
+- Low HR + High HRV
+
+<img width="1104" height="756" alt="image" src="https://github.com/user-attachments/assets/ab01d65d-a5ff-4c2f-abda-f42bf981966b" />
+
+### Code Learning
+
+```python
+#-------------(Add the showing of the target subjective recording labels)------------
+record_labels=[
+    ("2026-02-16 17:54","2026-02-16 19:45","Tolerable Social Context","#FF8C00"),
+    ("2026-02-17 09:49","2026-02-17 14:14","Poor Awaking, Recovery","#87CEEB"),
+    ("2026-02-17 15:13","2026-02-17 19:18","Extreme Burnout(Mental&Physical)","DarkRed"),
+    ("2026-02-18 08:08","2026-02-18 15:34","Suboptimal Recovery(Fatigue)","#87CEEB"),
+    ("2026-02-18 16:20","2026-02-18 20:50","Extreme Burnout(Mental&Physical)","DarkRed"),
+    ("2026-02-19 17:54","2026-02-19 22:50","Baseline","LightGray"),
+    ("2026-02-20 14:38","2026-02-20 20:26","High-stress Social Context","#FF8C00"),
+    ("2026-02-21 10:57","2026-02-21 15:00","High-stress Social Context","#FF8C00"),
+    ("2026-02-21 17:10","2026-02-21 21:00","Enriching Social Context","#DDA0DD")
+]
+#Define a list that contains the StartDate, EndDate,Text,Color
+
+ for start,end,text,col in record_labels:
+        axes[i].axvspan(pd.to_datetime(start),pd.to_datetime(end),color=col,alpha=0.15)
+        if axes[i]==axes[0]:
+            axes[i].text(pd.to_datetime(start),axes[i].get_ylim()[1],text,fontsize=10,rotation=45,verticalalignment='bottom')
+
+#-----------------scatterplot->lineplot--------------------------
+sns.lineplot(data=data, x='startDate', y='value', ax=axes[i], marker='o', markersize=4, linewidth=1, alpha=0.8)
+
+## 2026-02-28 — Data checking (Feb 27)-Verify the "Mindful App" manual-trigger method
+
+- Export the data in that night to see if the mindful app method works
+
+Problem:Failed to record the data needed due to the restrictive data import settings in the collection process
+
+```
+
+<img width="1186" height="1990" alt="download" src="https://github.com/user-attachments/assets/b48a77db-1c2d-4441-acc7-bd3e434e0a6c" />
+
+
+
+
+        
+
 
 
 
