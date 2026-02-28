@@ -213,10 +213,12 @@ AFib History Activation(Force the watch into a highfrequency sampling mode. Few 
 
 #### Next steps:
 1.Initial Feasibility Check：Export the data on Feb 28th to check if turning the watch in the inside of the waist and improve the efficiency of collectiong data.
+
 2.In the next two day: 
 - Continuous Logging: Maintain a high-fidelity manual log in Memos, capturing the precise start/end times of daily activities and mapping them to the 7 target states.
 - Instant Sampling: Actively initiate 30-second manual AFib/ECG recordings during critical "state-shift" moments (e.g., peak focus or sudden anxiety) to capture high-precision R-R interval data.
 - Contextual Tracking: Ensure the App Privacy Report is enabled to archive background app usage and interaction frequency.
+- 
 3.Data Integrity Review & Prototype Modeling
 - Gap Analysis: Consolidate all exported data (HR, Measured HRV, Steps, App Privacy Report) into a single dataframe to perform "Cross-Referencing" with Memo labels.
 - Feasibility Validation: Run a baseline correlation check to ensure that the "Fidgeting" (micro-movements) and "Anxiety" states are visibly distinguishable in the data.
