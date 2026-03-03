@@ -96,11 +96,11 @@ plt.show()
 ### Problems in Apple Watch auto-sampling
 Apple Watch Official Sampling Standards：
 
-- HRV (SDNN) documentation: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn?utm_source=chatgpt.com
+- HRV (SDNN) documentation: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn?utm_source
 - Heart Rate:
-https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartrate?utm_source=chatgpt.com
+https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartrate?utm_source
 - Respiratory Rate:
-https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/respiratoryrate?utm_source=chatgpt.com
+https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/respiratoryrate?utm_source
 
 
 #### Inaccurate sampling dute to ADHD-related movement tendency
@@ -223,6 +223,19 @@ AFib History Activation(Force the watch into a highfrequency sampling mode. Few 
 - Gap Analysis: Consolidate all exported data (HR, Measured HRV, Steps, App Privacy Report) into a single dataframe to perform "Cross-Referencing" with Memo labels.
 - Feasibility Validation: Run a baseline correlation check to ensure that the "Fidgeting" (micro-movements) and "Anxiety" states are visibly distinguishable in the data.
 - Adjustment: Identify any missing variables or "silent periods" in data collection before launching the final 2-week intensive data sprint.
+
+## 2026-03-03 — Feasibility check and 
+### result:
+After exporting and analyzing data from March 2nd to 3rd, the frequency of HRV data remains consistent with the period before enabling AFib History mode. The reason is still the strict signal-quality thresholds of the PPG
+sensors as well as the specific operational logic of the AFib recording feature.
+Official Apple Documents:
+
+https://support.apple.com/en-us/108375?utm_source
+
+Data on 2nd and 3rd:
+<img width="1189" height="1990" alt="2168123291f9bca966e8a02e948f4827" src="https://github.com/user-attachments/assets/08c53d93-d684-4f5f-b27d-0e32fd8ed7e7" />
+
+
 
 
 
