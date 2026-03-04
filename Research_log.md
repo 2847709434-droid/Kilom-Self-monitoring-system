@@ -224,16 +224,46 @@ AFib History Activation(Force the watch into a highfrequency sampling mode. Few 
 - Feasibility Validation: Run a baseline correlation check to ensure that the "Fidgeting" (micro-movements) and "Anxiety" states are visibly distinguishable in the data.
 - Adjustment: Identify any missing variables or "silent periods" in data collection before launching the final 2-week intensive data sprint.
 
-## 2026-03-03 — Feasibility check and 
-### result:
+## 2026-03-03 — Feasibility check and exhibiting more variance(AppReport and WalkingRecordings)
+### Feasibility check:
 After exporting and analyzing data from March 2nd to 3rd, the frequency of HRV data remains consistent with the period before enabling AFib History mode. The reason is still the strict signal-quality thresholds of the PPG
 sensors as well as the specific operational logic of the AFib recording feature.
 Official Apple Documents:
 
 https://support.apple.com/en-us/108375?utm_source
 
-Data on 2nd and 3rd:
+Data on 2nd:
 <img width="1189" height="1990" alt="2168123291f9bca966e8a02e948f4827" src="https://github.com/user-attachments/assets/08c53d93-d684-4f5f-b27d-0e32fd8ed7e7" />
+
+### Exhibiting more variance
+
+###### Code Learning
+```python
+#------------read Json documents---------------
+import pandas as pd
+path=r"D:\项目\自我监测系统项目\苹果手表导出数据\App_Privacy_Report_2026-03-03.ndjson"
+df_report=pd.read_json(path,lines=True)
+#The second parameter is attributed to the character of the Apple Health export systems.
+
+```
+
+## 2026-03-04-Apple Shortcuts to label more prefessionally, redefine the "7-states" and explore the data on March 4th
+
+#### State Log Shortcuts
+- Introduction:
+When arousing the shortcut, there will be choices of STATE(Regulation,Depletion,Overload,Impulse,Mismatch),INTENSITY(1-5),FATIQUE(1-5),LOCATION(Public,Dorm,Classroom,Home,Outdoor) and text fillup of the AROUSAL respectively. Each single data will be collected in a document called state log.csv within the form eg. 2026-03-04 22:45,Depletion,2,Project,3,Dorm
+
+- icloud link:
+https://www.icloud.com/shortcuts/139de11d5a074f1a8b464abb59f4b3a0
+
+- flow screenshot:
+![b5f28078f698aa49c024f2a16f99714d](https://github.com/user-attachments/assets/d821acc9-a14b-4f12-87a7-0df9f7adb359)
+
+#### Redefine the "7-states"
+- Illustration:
+To define and classify the state more fundementally and join the ML process smoothly, 7 states is reclassify as A.Resource depletion state(primary Post-Hyperfocus Burnout and Negative Accumulation), B.Impulse dysregultation(primary  Impulsive Behavior) C.Overload state(Primary Sensory Overload and Hyper-Self-Monitoring), D.State-task mismatch(Primary Temporal Distortion and Effective Recovery)
+
+#### 
 
 
 
