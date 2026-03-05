@@ -247,7 +247,7 @@ df_report=pd.read_json(path,lines=True)
 
 ```
 
-## 2026-03-04-Apple Shortcuts to label more prefessionally, redefine the "7-states" and explore the data on March 4th
+## 2026-03-04-Apple Shortcuts to label more prefessionally, redefine the "7-states"
 
 #### State Log Shortcuts
 - Introduction:
@@ -263,7 +263,8 @@ https://www.icloud.com/shortcuts/139de11d5a074f1a8b464abb59f4b3a0
 - Illustration:
 To define and classify the state more fundementally and join the ML process smoothly, 7 states is reclassify as A.Resource depletion state(primary Post-Hyperfocus Burnout and Negative Accumulation), B.Impulse dysregultation(primary  Impulsive Behavior) C.Overload state(Primary Sensory Overload and Hyper-Self-Monitoring), D.State-task mismatch(Primary Temporal Distortion and Effective Recovery)
 
-#### 
+#### Next steps
+- explore the data on 4th(checking the baseline recording)
 
 
 
