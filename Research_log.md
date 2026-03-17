@@ -266,6 +266,17 @@ To define and classify the state more fundementally and join the ML process smoo
 #### Next steps
 - explore the data on 4th(checking the baseline recording)
 
+## 2026-03-17-Redirection
+1.卡在收集数据的难度就太大了，很难有很好的数据集样品，很伤脑子。
+2.原本尝试用claw agent去帮忙自动化操作，但是看到一篇很有道理的文章解释，大多数可以用script解决的问题就不应该用agent
+3.有点卡在意义和动机这一块，越来越想不通这个项目做出来又能怎么样
+4.对于数据分析以致机器学习整个流程都没有系统完成过，所以总很容易在一个地方牛角尖去钻，然后弥补知识，但是对于我这种我觉得太难熬了，没有方向和意义感。
+
+Next Steps：
+1，先去完成一下脑机的项目，因为相似程度很大，先去接触一下简单的项目，去熟悉流程，并且了解整个环节。
+2.这一类小项目也可以去打比赛，而且产出快，容易让我坚持和做下去。
+3.可以着手ai艺术方向，能续航才是最重要的。
+4.同时关注ai新闻。
 
 
 
